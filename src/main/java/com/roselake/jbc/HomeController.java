@@ -86,6 +86,7 @@ public class HomeController {
         try {
             Map uploadResult = cloudinaryConfig.upload(file.getBytes(), ObjectUtils.asMap("resourcetype", "file"));
             job.setImage(uploadResult.get("url").toString());
+            System.out.println("NEW IMAGE URL :: " + job.getImage());
         } catch (IOException e) {
             // if something fails in the image upload...
             e.printStackTrace();

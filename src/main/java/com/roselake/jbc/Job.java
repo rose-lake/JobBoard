@@ -64,6 +64,23 @@ public class Job {
         this.image = "";
     }
 
+    public Job(@NotNull @Size(min = 3) String title,
+               @NotNull @Size(min = 3) String company,
+               @NotNull @Size(min = 3) String description,
+               @NotNull @Size(min = 10) String postedDate,
+               @NotNull @Size(min = 2) String contactName,
+               @NotNull @Size(min = 10) String contactPhone,
+               @NotNull @Size(min = 5) String contactEmail,
+               @NotNull String image) {
+        this.title = title;
+        this.company = company;
+        this.description = description;
+        this.postedDate = postedDate;
+        this.contactName = contactName;
+        this.contactPhone = contactPhone;
+        this.contactEmail = contactEmail;
+        this.image = image;
+    }
 
     public long getId() {
         return id;

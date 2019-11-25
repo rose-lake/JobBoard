@@ -31,19 +31,35 @@
     <!-- display ONE JOB DETAIL :: with Description -->
     <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 30rem;">
 
-        <!-- optional IMAGE section -->
-        <img th:if="${job.image!=''}" class="card-img mx-auto" th:src="${job.image}" alt="job image" style="max-height: 24rem" />
-
-        <!-- show this stuff every time -->
-        <div class="card-body mx-auto">
-            <h5 class="card-title d-flex">
-                <span class="col-3 p-0">Title:</span>
-                <span class="col-9 p-0" th:inline="text">[[${job.title}]] @ [[${job.company}]]</span>
-            </h5>
-            <p class="card-text mb-2 d-flex">
-                <span class="col-3 p-0">Posted:</span>
-                <span class="col-9 p-0" th:text="${job.postedDate}"></span>
-            </p>
+        <!-- if an IMAGE EXISTS -->
+        <div th:if="${job.image!=''}">
+            <img class="card-img mx-auto" th:src="${job.image}" alt="job image" style="max-height: 24rem" />
+            <div class="card-img-overlay mx-auto">
+                <h5 class="text-center text-white">
+                    <span th:text="${job.title}"></span> @ <span th:text="${job.company}"></span>
+                </h5>
+            </div>
+        </div>
+        <!-- show the date posted just under the image -->
+        <div th:if="${job.image!=''}" class="card-body">
+            <p class="card-subtitle text-muted">Posted <span th:text="${job.postedDate}"></span></p>
+        </div>
+        <!-- if an image DOES NOT EXIST -->
+        <div th:unless="${job.image!=''}">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <span th:text="${job.title}"></span> @ <span th:text="${job.company}"></span>
+                </h5>
+                <p class="card-subtitle text-muted mb-2">
+                    Posted <span th:text="${job.postedDate}"></span>
+                </p>
+            </div>
+        </div>
+        <!-- show this stuff EVERY TIME-->
+        <div class="card-body">
+            <p class="card-text" th:text="${job.description}"></p>
+        </div>
+        <div class="card-body">
             <p class="card-text d-flex mb-0">
                 <span class="col-3 p-0">Contact:</span>
                 <span class="col-9 p-0" th:text="${job.contactName}"></span>
@@ -56,10 +72,7 @@
                 <span class="col-3 p-0"></span>
                 <span class="col-9 p-0" th:text="${job.contactEmail}"></span>
             </p>
-            <p class="card-text mb-2" th:text="${job.description}"></p>
         </div>
-
-
 
         <div class="card-footer d-flex mx-auto">
             <div class="btn-group d-flex" role="group" aria-label="Edit Delete or View All button group">

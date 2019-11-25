@@ -38,19 +38,29 @@
             <img th:if="${job.image!=''}" class="card-img mx-auto" th:src="${job.image}" alt="job image" style="max-height: 24rem" />
 
             <!-- show this stuff every time -->
-            <div class="card-body mx-auto">
+            <div class="card-body">
                 <h5 class="card-title">
                     <span th:text="${job.title}"></span> @ <span th:text="${job.company}"></span>
                 </h5>
-                <p class="card-text text-muted mb-2">
-                    Posted on <span th:text="${job.postedDate}"></span>
+                <p class="card-subtitle text-muted mb-2">
+                    Posted <span th:text="${job.postedDate}"></span>
                 </p>
-                <p class="card-text mb-2">
-                    Contact:<br>
-                    <span th:text="${job.contactName}"></span><br>
-                    <span th:text="${job.contactPhone}"></span><br>
-                    <span th:text="${job.contactEmail}"></span></p>
             </div>
+            <div class="card-body">
+                <p class="card-text d-flex mb-0">
+                    <span class="col-3 p-0">Contact:</span>
+                    <span class="col-9 p-0" th:text="${job.contactName}"></span>
+                </p>
+                <p class="card-text d-flex mb-0">
+                    <span class="col-3 p-0"></span>
+                    <span class="col-9 p-0" th:text="${job.contactPhone}"></span>
+                </p>
+                <p class="card-text d-flex">
+                    <span class="col-3 p-0"></span>
+                    <span class="col-9 p-0" th:text="${job.contactEmail}"></span>
+                </p>
+            </div>
+
             <div class="card-footer mx-auto">
                 <div class="btn-group" role="group" aria-label="Edit Delete or View Details button group">
                     <a th:href="@{/delete/{id}(id=${job.id})}" class="btn btn-secondary">
