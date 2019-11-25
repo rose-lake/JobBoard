@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac98120a-7d74-4b61-97e2-ac65c8f56fa1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/la-skyline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/nyc-skyline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/philly-skyline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/nature-purple-night.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jobdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jobdetail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/joblist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/joblist.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574690887351</updated>
-      <workItem from="1574690907373" duration="18182000" />
+      <workItem from="1574690907373" duration="20035000" />
     </task>
     <servers />
   </component>
