@@ -15,7 +15,7 @@
     <link rel="stylesheet" th:href="@{/styles.css}">
 
     <!-- favicon link -->
-    <link rel="icon" type="image/png" href="">
+    <link rel="icon" type="image/png" href="/img/peace-solid.png">
 
 </head>
 
@@ -29,35 +29,42 @@
 
     <div th:each="job : ${jobs}">
 
-        <!-- display ONE JOB DETAIL -->
-        <div th:fragment="one-job" class="card text-white bg-dark mb-3 mx-auto" style="max-width: 25rem;">
+
+
+        <!-- display ONE JOB SUMMARY :: no Description -->
+        <div th:fragment="one-job-summary" class="card text-white bg-dark mb-3 mx-auto" style="max-width: 30rem;">
 
             <!-- optional IMAGE section -->
-            <!-- consider adding class=img-fluid -->
-            <!-- consider using my-auto, but it didn't seem to work... -->
-            <!-- consider adding an extra surrounding div, and making it the card-img-overlay class with d-flex class -->
-            <!-- then, on the inside, you would make it mx-auto, my-auto, align-self-center, text-center, text-white -->
-            <img th:if="${job.image!=''}" class="card-img mx-auto" th:src="${job.image}" alt="job image" style="max-height: 20rem;" />
+            <img th:if="${job.image!=''}" class="card-img mx-auto" th:src="${job.image}" alt="job image" style="max-height: 24rem" />
 
             <!-- show this stuff every time -->
             <div class="card-body mx-auto">
-                <h5 class="card-title" th:inline="text">[[${job.title}]]</h5>
-                <p class="card-text mb-2" th:inline="text">[[${job.postedDate}]]</p>
-                <p class="card-text mb-2" th:inline="text">[[${job.author}]]</p>
-                <p class="card-text mb-2" th:inline="text">[[${job.phone}]]</p>
+                <h5 class="card-title">
+                    <span th:text="${job.title}"></span> @ <span th:text="${job.company}"></span>
+                </h5>
+                <p class="card-text text-muted mb-2">
+                    Posted on <span th:text="${job.postedDate}"></span>
+                </p>
+                <p class="card-text mb-2">
+                    Contact:<br>
+                    <span th:text="${job.contactName}"></span><br>
+                    <span th:text="${job.contactPhone}"></span><br>
+                    <span th:text="${job.contactEmail}"></span></p>
             </div>
-            <div class="card-footer d-flex mx-auto">
-                <div class="btn-group d-flex" role="group" aria-label="Edit Delete or View All button group">
-                    <a th:href="@{/view/{id}(id=${job.id})}" class="btn btn-secondary">
-                        </i>View</a>
-                    <a th:href="@{/edit/{id}(id=${job.id})}" class="btn btn-secondary ">
-                        <i class="far fa-edit mx-2"></i>Edit</a>
+            <div class="card-footer mx-auto">
+                <div class="btn-group" role="group" aria-label="Edit Delete or View Details button group">
                     <a th:href="@{/delete/{id}(id=${job.id})}" class="btn btn-secondary">
                         <i class="far fa-trash-alt mx-2"></i>Delete</a>
+                    <a th:href="@{/edit/{id}(id=${job.id})}" class="btn btn-secondary ">
+                        <i class="far fa-edit mx-2"></i>Edit</a>
+                    <a th:href="@{/view/{id}(id=${job.id})}" class="btn btn-secondary">
+                        <i class="fas fa-bars mx-2"></i>Details</a>
                 </div>
             </div>
 
         </div>
+
+
 
     </div>
 

@@ -15,7 +15,7 @@
     <link rel="stylesheet" th:href="@{/styles.css}">
 
     <!-- favicon link -->
-    <link rel="icon" type="image/png" href="">
+    <link rel="icon" type="image/png" href="/img/peace-solid.png">
 
 </head>
 
@@ -25,7 +25,138 @@
     <div th:replace="base::navbar"></div>
 </header>
 
-<main role="main" class="container">
+
+<main role="main" class="container mx-auto">
+
+
+    <!-- OBJECT FIELDS to be included -->
+    <!-- * id -->
+    <!-- * title -->
+    <!-- * company -->
+    <!-- description -->
+    <!-- postedDate -->
+    <!-- contactName -->
+    <!-- contactPhone -->
+    <!-- contactEmail -->
+    <!-- image as FILE -->
+
+    <form action="#" th:action="@{/process}" th:object="${job}" method="post" enctype="multipart/form-data">
+
+        <!-- HTML5 has new global attribute "hidden" which can be plopped into any tag to literally hide it -->
+        <!-- if you want it to be invisible instead, use Bootstrap's .invisible class -->
+        <!-- original way to do it... -->
+        <!-- <input type="hidden" th:field="*{id}" /> -->
+        <!-- new way to do it... -->
+
+        <!-- id :: hidden input field -->
+        <input hidden th:field="*{id}" />
+
+        <!-- title :: text input field -->
+        <div class="form-group d-flex">
+            <label for="title" class="col-form-label col-3">Title:</label>
+            <input type="text"
+                   name="title" id="title"
+                   class="form-control col-9 mx-3"
+                   placeholder="Job title"
+                   th:field="*{title}">
+            <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
+        </div>
+
+        <!-- company :: text input field -->
+        <div class="form-group d-flex">
+            <label for="company" class="col-form-label col-3">Company:</label>
+            <input type="text"
+                   name="company" id="company"
+                   class="form-control col-9 mx-3"
+                   placeholder="Company"
+                   th:field="*{company}">
+            <span th:if="${#fields.hasErrors('company')}" th:errors="*{company}"></span>
+        </div>
+
+        <!-- postedDate :: date input field-->
+        <div class="form-group d-flex">
+            <label for="date" class="col-form-label col-3" >Posted Date:</label>
+            <input type="date"
+                   name="date" id="date"
+                   class="form-control col-9 mx-3"
+                   th:field="*{postedDate}"  />
+            <span th:if="${#fields.hasErrors('postedDate')}" th:errors="*{postedDate}"></span>
+        </div>
+
+        <!-- contactName :: text input field -->
+        <div class="form-group d-flex">
+            <label for="contactName" class="col-form-label col-3">Contact Name:</label>
+            <input type="text"
+                   name="contactName" id="contactName"
+                   class="form-control col-9 mx-3"
+                   placeholder="Contact Name"
+                   th:field="*{contactName}">
+            <span th:if="${#fields.hasErrors('contactName')}" th:errors="*{contactName}"></span>
+        </div>
+
+        <!-- contactPhone :: text input field -->
+        <div class="form-group d-flex">
+            <label for="contactPhone" class="col-form-label col-3">Contact Phone:</label>
+            <input type="text"
+                   name="contactPhone" id="contactPhone"
+                   class="form-control col-9 mx-3"
+                   placeholder="(xxx) xxx-xxxx"
+                   th:field="*{contactPhone}">
+            <span th:if="${#fields.hasErrors('contactPhone')}" th:errors="*{contactPhone}"></span>
+        </div>
+
+
+        <!-- contactEmail :: text input field -->
+        <div class="form-group d-flex">
+            <label for="contactEmail" class="col-form-label col-3">Contact Email:</label>
+            <input type="text"
+                   name="contactEmail" id="contactEmail"
+                   class="form-control col-9 mx-3"
+                   placeholder="Contact Email"
+                   th:field="*{contactEmail}">
+            <span th:if="${#fields.hasErrors('contactEmail')}" th:errors="*{contactEmail}"></span>
+        </div>
+
+
+        <!-- description :: text-area input field -->
+        <div class="form-group d-flex">
+            <label for="description" class="col-form-label col-3">Description:</label>
+            <textarea type="text"
+                      name="description" id="description"
+                      class="form-control col-9 mx-3"
+                      placeholder="Job description..."
+                      th:field="*{description}"></textarea>
+            <span th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></span>
+        </div>
+
+
+        <!-- DISPLAY ONLY :: existing image -->
+        <!-- this is not a form element and does not get passed along on post -->
+        <div class="form-group d-flex" th:if="${job.image}!=''">
+            <label for="existingImage" class="col-form-label col-3">Existing Image:</label>
+            <img th:src="${job.image}" alt="job image"
+                 id="existingImage" class="col-9 mx-3 my-image-width"/>
+        </div>
+
+        <!-- image :: file input -->
+        <input hidden th:field="*{image}" />
+        <div class="form-group d-flex">
+            <label for="file" class="col-form-label col-3">Image File:</label>
+            <input type="file"
+                   id="file" name="file"
+                   class="form-control-file col-9" >
+        </div>
+
+        <!-- oh yeah, SUBMIT -->
+        <div class="form-group d-flex">
+            <input type="submit" value="Submit" />
+        </div>
+
+    </form>
+
+
+
+
 </main>
 
 <div th:replace="base::footer"></div>

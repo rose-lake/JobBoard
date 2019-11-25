@@ -15,7 +15,7 @@
     <link rel="stylesheet" th:href="@{/styles.css}">
 
     <!-- favicon link -->
-    <link rel="icon" type="image/png" href="">
+    <link rel="icon" type="image/png" href="/img/peace-solid.png">
 
 </head>
 
@@ -26,6 +26,55 @@
 </header>
 
 <main role="main" class="container">
+
+
+    <!-- display ONE JOB DETAIL :: with Description -->
+    <div class="card text-white bg-dark mb-3 mx-auto" style="max-width: 30rem;">
+
+        <!-- optional IMAGE section -->
+        <img th:if="${job.image!=''}" class="card-img mx-auto" th:src="${job.image}" alt="job image" style="max-height: 24rem" />
+
+        <!-- show this stuff every time -->
+        <div class="card-body mx-auto">
+            <h5 class="card-title d-flex">
+                <span class="col-3 p-0">Title:</span>
+                <span class="col-9 p-0" th:inline="text">[[${job.title}]] @ [[${job.company}]]</span>
+            </h5>
+            <p class="card-text mb-2 d-flex">
+                <span class="col-3 p-0">Posted:</span>
+                <span class="col-9 p-0" th:text="${job.postedDate}"></span>
+            </p>
+            <p class="card-text d-flex mb-0">
+                <span class="col-3 p-0">Contact:</span>
+                <span class="col-9 p-0" th:text="${job.contactName}"></span>
+            </p>
+            <p class="card-text d-flex mb-0">
+                <span class="col-3 p-0"></span>
+                <span class="col-9 p-0" th:text="${job.contactPhone}"></span>
+            </p>
+            <p class="card-text d-flex">
+                <span class="col-3 p-0"></span>
+                <span class="col-9 p-0" th:text="${job.contactEmail}"></span>
+            </p>
+            <p class="card-text mb-2" th:text="${job.description}"></p>
+        </div>
+
+
+
+        <div class="card-footer d-flex mx-auto">
+            <div class="btn-group d-flex" role="group" aria-label="Edit Delete or View All button group">
+                <a th:href="@{/delete/{id}(id=${job.id})}" class="btn btn-secondary">
+                    <i class="far fa-trash-alt mx-2"></i>Delete</a>
+                <a th:href="@{/edit/{id}(id=${job.id})}" class="btn btn-secondary ">
+                    <i class="far fa-edit mx-2"></i>Edit</a>
+                <a th:href="@{/}" class="btn btn-secondary">
+                    <i class="far fa-list-alt mx-2"></i>View All</a>
+            </div>
+        </div>
+
+    </div>
+
+
 </main>
 
 

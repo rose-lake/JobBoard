@@ -21,3 +21,7 @@ body {
 /* end sticky footer code */
 /* sticky footer from https://css-tricks.com/couple-takes-sticky-footer/  --  Thank you !! */
 /*******************************************************************************************/
+
+.purple-text {
+    color: #5e46a2;
+}

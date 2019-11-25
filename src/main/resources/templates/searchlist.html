@@ -15,7 +15,7 @@
     <link rel="stylesheet" th:href="@{/styles.css}">
 
     <!-- favicon link -->
-    <link rel="icon" type="image/png" href="">
+    <link rel="icon" type="image/png" href="/img/peace-solid.png">
 
 </head>
 
@@ -33,7 +33,7 @@
     <div th:each="job : ${jobs}">
 
         <!-- display ONE FLIGHT DETAIL -->
-        <div th:replace="joblist::one-job"></div>
+        <div th:replace="joblist::one-job-summary"></div>
 
     </div>
 

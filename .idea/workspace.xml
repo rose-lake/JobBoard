@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac98120a-7d74-4b61-97e2-ac65c8f56fa1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/CloudinaryConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/DataLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/JobRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/jobdetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/jobform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/joblist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/searchlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/peace-solid.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/CraigsJobApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/CraigsJobApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/roselake/jbc/CraigsJobApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/roselake/jbc/CraigsJobApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/JobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/JobRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jobdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jobdetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jobform.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jobform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/joblist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/joblist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/searchlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/searchlist.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,14 +33,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1U6xXDvOkabgRCzvF81VFhirbO6" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FlightBasic" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574690887351</updated>
-      <workItem from="1574690907373" duration="3128000" />
+      <workItem from="1574690907373" duration="13653000" />
     </task>
     <servers />
   </component>
