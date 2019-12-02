@@ -11,8 +11,8 @@
     <groupId>com.roselake</groupId>
     <artifactId>jbc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>CraigsJob</name>
-    <description>craigslist for jobs</description>
+    <name>CraigsJobSQL</name>
+    <description>craigslist for jobs, using SQL</description>
 
     <properties>
         <java.version>1.8</java.version>

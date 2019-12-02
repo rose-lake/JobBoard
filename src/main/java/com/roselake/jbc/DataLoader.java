@@ -13,7 +13,7 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
 
-        // COMMENT OUT DATA LOADER AFTER THE DATABASE IS INITIALIZED THE FIRST TIME
+//        // COMMENT OUT DATA LOADER AFTER THE DATABASE IS INITIALIZED THE FIRST TIME
 //        repository.save(new Job("Data Analyst", "NIST",
 //                "This is a really long description... " +
 //                "There will be some text here... And a disclaimer... " +
