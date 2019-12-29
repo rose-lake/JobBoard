@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac98120a-7d74-4b61-97e2-ac65c8f56fa1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/screenshot1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/screenshot2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/screenshot3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/DataLoader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +156,7 @@
       <workItem from="1576687150302" duration="179000" />
       <workItem from="1576687357781" duration="504000" />
       <workItem from="1577652122741" duration="57000" />
-      <workItem from="1577652201981" duration="1391000" />
+      <workItem from="1577652201981" duration="2120000" />
     </task>
     <servers />
   </component>
