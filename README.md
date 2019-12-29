@@ -1,9 +1,8 @@
 # Job Board
 
 The home page lists all of the currently posted jobs. 
-![Screenshot1](screenshots/screenshot1.png)
 
-The search capability allows searching by full or partial words that are found in the Job's title, company, or description. 
+![Screenshot1](screenshots/screenshot1.png)
 
 Any user can... 
 
@@ -18,6 +17,8 @@ Any user can...
 - create a new job posting.
 ![Screenshot3](screenshots/screenshot3.png)
 
+
+The **search capability** allows searching by full or partial words that are found in the Job's title, company, or description. 
 
 The application uses Bootstrap and is responsive. 
 
