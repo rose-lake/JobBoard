@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac98120a-7d74-4b61-97e2-ac65c8f56fa1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/CloudinaryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/CloudinaryConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/CraigsJobApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/JobBoardApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/roselake/jbc/DataLoader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.JobBoardApplication">
     <configuration name="CraigsJobApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="CraigsJobSQL" />
       <extension name="coverage">
@@ -107,12 +105,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@9184f21" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bc96d7dd" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@9184f21" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f851632" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bc96d7dd" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@edd6d3e6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -155,7 +153,9 @@
       <workItem from="1575924149949" duration="15000" />
       <workItem from="1575925477859" duration="1798000" />
       <workItem from="1576687150302" duration="179000" />
-      <workItem from="1576687357781" duration="127000" />
+      <workItem from="1576687357781" duration="504000" />
+      <workItem from="1577652122741" duration="57000" />
+      <workItem from="1577652201981" duration="1391000" />
     </task>
     <servers />
   </component>
