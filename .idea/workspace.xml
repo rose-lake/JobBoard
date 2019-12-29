@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac98120a-7d74-4b61-97e2-ac65c8f56fa1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshots/screenshot1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/screenshot2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/screenshot3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,17 +101,7 @@
       <serviceView>
         <option name="contentProportion" value="0.013574661" />
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bc96d7dd" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bc96d7dd" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@63f669f9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -156,7 +144,8 @@
       <workItem from="1576687150302" duration="179000" />
       <workItem from="1576687357781" duration="504000" />
       <workItem from="1577652122741" duration="57000" />
-      <workItem from="1577652201981" duration="2394000" />
+      <workItem from="1577652201981" duration="3303000" />
+      <workItem from="1577657082947" duration="39000" />
     </task>
     <servers />
   </component>
